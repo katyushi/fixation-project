@@ -21,7 +21,7 @@
                         <a>placeholder</a>
                     </li>
                     <li>
-                        <a>About us</a>
+                        <router-link to="/about">Something about us</router-link>
                     </li>
                 </ul>
             </div>
@@ -59,8 +59,7 @@ footer {
     align-items: center;
     background-color: var(--primary);
     color: #fff;
-    height: 3fr;
-    padding: 25px 10px;
+    padding: 25px 15px;
     position: relative;
     top: 75px;
 }
@@ -94,6 +93,11 @@ footer {
 
 .inner-footer .column-3 ul li {
     padding: 7px 0;
+}
+
+.inner-footer .column-3 ul li * {
+    color: white;
+    text-decoration: none;
 }
 
 .inner-footer .column-4 p {

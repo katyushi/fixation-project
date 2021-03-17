@@ -1,7 +1,9 @@
 <template>
   <header class="header">
       <template class="inner-header">
-      <img src="../assets/logo.png" alt="logo" width="50" height="50">
+        <router-link to="/">
+          <img src="../assets/logo.png" alt="logo" width="50" height="50">
+        </router-link>
       <form>
         <input name="busca" id="busca" type="text" placeholder="Buscar...">
         <input type="submit" id="lupa" value="Buscar" >

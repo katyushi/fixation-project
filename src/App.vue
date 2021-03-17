@@ -2,9 +2,7 @@
   <div id="app">
     <AppHeader/>
     <main id="main">
-      <transition>
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
+      <transition mode="out-in">
         <router-view/>
       </transition>
     </main>
@@ -82,5 +80,8 @@ table {
 
 :root {
   --primary: #3E4F52;
+  --secondary: #42b883;
+  --tertiary: #3DD8EB;
+  --fourth: #EB3D99;
 }
 </style>
