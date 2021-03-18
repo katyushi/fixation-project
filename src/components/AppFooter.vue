@@ -34,6 +34,12 @@
                     <a>
                         <img src="../assets/logo.png" alt="logo" width="25" height="25">
                     </a>
+                    <a>
+                        <img src="../assets/logo.png" alt="logo" width="25" height="25">
+                    </a>
+                    <a>
+                        <img src="../assets/logo.png" alt="logo" width="25" height="25">
+                    </a>
                 </div>
             </div>
         </div>
@@ -59,7 +65,7 @@ footer {
     align-items: center;
     background-color: var(--primary);
     color: #fff;
-    padding: 25px 15px;
+    padding-top: 25px;
     position: relative;
     top: 75px;
 }
@@ -68,6 +74,7 @@ footer {
     display: grid;
     grid-gap: 125px;
     grid-template-columns: repeat(4, 1fr);
+    margin: 0 var(--padding);
 }
 
 .inner-footer .column-1 img {
@@ -89,19 +96,23 @@ footer {
 
 .inner-footer .column-3 p {
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .inner-footer .column-3 ul li {
     padding: 7px 0;
+    text-align: left;
 }
 
 .inner-footer .column-3 ul li * {
     color: white;
     text-decoration: none;
+    text-align: left;
 }
 
 .inner-footer .column-4 p {
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .inner-footer .column-4 .sc-icon-holder a {
@@ -113,6 +124,11 @@ footer {
 .copyright {
     margin-top: 25px;
     text-transform: capitalize;
+    width: 100%;
+    text-align: center;
+    padding: 12.5px 0;
+    background-color: white;
+    color: var(--secondary);
 }
 
 .copyright * {
@@ -121,7 +137,7 @@ footer {
 
 .copyright .hr {
     width: 0;
-    border: 1px solid white;
+    border: 0.5px solid var(--secondary);
     height: 14px;
     margin: 0 10px;
 }
@@ -133,6 +149,26 @@ footer {
         justify-content: center;
         align-items: center;
         grid-gap: 25px;
+    }
+
+    .inner-footer .column-3 p {
+    text-align: center;
+}
+
+.inner-footer .column-3 ul li {
+    text-align: center;
+}
+
+.inner-footer .column-3 ul li * {
+    text-align: center;
+}
+
+.inner-footer .column-4 p {
+    text-align: center;
+}
+
+    .copyright * {
+        font-size: 14px;
     }
 }
 

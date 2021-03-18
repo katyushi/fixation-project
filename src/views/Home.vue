@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <carousel :autoplay="true" :items="1" :nav="false">
+    <carousel :autoplay="false" :items="1" :nav="false">
       <img src="https://placeimg.com/1366/768/any?1">
       <img src="https://placeimg.com/1366/768/any?2">
       <img src="https://placeimg.com/1366/768/any?3">
@@ -29,7 +29,7 @@ export default {
 
 <style>
 .home {
-  padding: 0 15px;
+  padding: 0 var(--padding);
 }
 
 @media (max-width: 700px) {
@@ -47,6 +47,11 @@ export default {
   top: -30px;
 }
 
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: var(--secondary) !important;
+}
+
 .bar {
   display: flex;
   flex-direction: row;
@@ -54,6 +59,7 @@ export default {
   width: 100%;
   padding: 15px 0;
   margin-top: -23px;
+  margin: -23px 0 var(--defaultSpace);
   background-color: var(--secondary);
 }
 </style>

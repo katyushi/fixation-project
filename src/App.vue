@@ -83,5 +83,7 @@ table {
   --secondary: #42b883;
   --tertiary: #3DD8EB;
   --fourth: #EB3D99;
+  --padding: 15px;
+  --defaultSpace: 50px;
 }
 </style>

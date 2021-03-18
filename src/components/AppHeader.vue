@@ -36,7 +36,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary);
-    padding: 5px 15px;
+    padding: 5px var(--padding);
 }
 ul {
   list-style: none;
@@ -63,11 +63,12 @@ form {
   width: 100%;
   padding: 10px;
   border: none;
+  filter: opacity(0.85);
 }
 
 #busca:focus,
 #busca:hover {
-  transform: scale(1.1);
+  filter: opacity(1);
 }
 
 #lupa {
